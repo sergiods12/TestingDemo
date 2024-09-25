@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myLibrary", "myLibrary\myLibrary.csproj", "{79339D0E-6AA1-4D4D-8B1B-1D2E4AD29718}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myLibrary", "myLibrary\myLibrary.csproj", "{79339D0E-6AA1-4D4D-8B1B-1D2E4AD29718}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myLibraryTest", "myLibraryTest\myLibraryTest.csproj", "{9D35B110-8AAC-432D-9431-D72C5B0492F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myLibraryTest", "myLibraryTest\myLibraryTest.csproj", "{9D35B110-8AAC-432D-9431-D72C5B0492F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{62E496E1-38A8-4389-9EB1-53CAE5F6FB9D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
