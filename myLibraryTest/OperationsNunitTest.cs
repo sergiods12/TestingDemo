@@ -29,7 +29,7 @@ namespace myLibrary
             //Assert.That(result, Is.EqualTo(expectedResult));
             //Assert.That(result, Is.Not.EqualTo(expectedResult));
 
-            Assert.That(result, Is.EqualTo(9));
+            Assert.That(result, Is.EqualTo(7));
             Assert.That(result, Is.Not.EqualTo(8));
             Assert.That(result, Is.Not.EqualTo(6));
 

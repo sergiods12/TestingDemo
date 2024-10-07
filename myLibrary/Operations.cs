@@ -30,9 +30,20 @@ namespace myLibrary
 
         }
 
+
         public double AddDecimal(double number1, double number2)
         {
             return number1 + number2;
         }
+
+        public IList<int> GetEvenNumbers(int start, int end)
+        {
+            
+            return Enumerable.Range(start, end)
+                .Where(IsEven)
+                .ToList();
+
+        }
+
     }
 }
