@@ -76,5 +76,39 @@ namespace myLibrary
 
         }
 
+        [Test]
+        [TestCase(1, 20)]
+        [TestCase(100, 1000)]
+        public void GetEvenNumbers_ImputRange_ReturnEvenNumbers(int start, int end)
+        { 
+
+            //Arrange
+
+            Operations operations = new();
+            int startNumber = start %2 == 0 ? start : start + 1;
+            int endNumber = end % 2 == 0 ? end : end - 1;
+
+            int middleNumber = (startNumber + endNumber) / 2;
+            middleNumber = middleNumber % 2 == 0 ? middleNumber : middleNumber + 1;
+
+            //2. Act
+
+            var result = operations.GetEvenNumbers(start, end);
+
+            //3. Assert
+            Assert.That(end - start >=2, Is.True);
+            Assert.That(result, Is.Not.Empty);
+            Assert.That(result, Is.Ordered);
+            Assert.That(result, Is.Unique);
+            Assert.That(result[0], Is.TypeOf<int>());
+            //Assert.That(result, Does.Contain(2));
+            Assert.That(result, Has.No.All.LessThan(startNumber));
+            Assert.That(result, Has.Member(startNumber));
+            
+
+
+
+        }
+
     }
 }
